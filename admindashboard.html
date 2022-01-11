@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adminDashboard-Online Bidding</title>
+    <link rel="stylesheet" href="adminstyle.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="page_wrape">
+        <!-- ---------------side_bar----------------- -->
+        <div class="side-bar">
+            <div class="logo">
+                <a href="#" style="text-decoration: none;">
+                    <h1 style="color: royalblue;">Online <strong style="font-weight: bold; color:red;">Bidding</strong>
+                    </h1>
+                </a>
+                <a href="#"><img src="images/pp.png" height="auto" width="45px" alt=""></a>
+            </div>
+            <div class="avtar">
+                <div class="avtar-img">
+                    <img src="images/137596349_1298209983883972_1584737591637659789_n.jpg" height="auto" width="45px"
+                        style="border-radius:50%;" alt="">
+                </div>
+                <div class="name-pos">
+                    <h2>Abhishek Jaiswal</h2>
+                    <!-- <h5>Company Head</h5> -->
+                </div>
+            </div>
+            <div class="side-bar-nav">
+                <ul>
+                    <li>
+                        <a href="">
+                            <span><i class="fas fa-home"></i></span>
+                            <span class="nav-link" style="font-weight: bold;">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- <a href="">
+                            <span><i class="fab fa-product-hunt"></i></span>
+                            <span class="nav-link"> Category</span> -->
+                        <!-- <ul>
+                                <li>
+                                    <a href="">
+                                        <i class="fas fa-puzzle-piece">Add</i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fas fa-eye">View</i>
+                                    </a>
+                                </li>
+                            </ul> -->
+
+                        <button class="dropdown-btn"><i class="fab fa-product-hunt" style="font-weight: bold;">
+                                Category</i>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="addAdminCategory.html">Add</a>
+                            <a href="viewAdminCategory.html">View</a>
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <button class="dropdown-btn"><i class="fas fa-users"> User</i>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="sellerDetails.html">Seller</a>
+                            <a href="BidderDetails.html">Bidder</a>
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <button class="dropdown-btn"><i class="fas fa-cog"> Product
+                                Verfication</i>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="#">Add</a>
+                            <a href="#">View</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="resultWinner.html">
+                            <span><i class="fas fa-poll"></i></span>
+                            <span class="nav-link" style="font-weight: bold;"> Result</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span><i class="fas fa-comments-dollar"></i></span>
+                            <span class="nav-link" style="font-weight: bold;">FeedBack</span>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span><i class="fas fa-sign-out-alt"></i></span>
+                            <span class="nav-link" style="font-weight: bold;">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- -----------------header-start------------- -->
+        <header>
+            <div class="head_inner">
+                <div class="right-part">
+                    <form>
+                        <input type="text" placeholder="Search...." required="">
+                        <button><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="left-part">
+                    <ul>
+                        <li>
+                            <div class="profile">
+                                <div class="avtar-img">
+                                    <img src="images/137596349_1298209983883972_1584737591637659789_n.jpg" height="auto"
+                                        width="45px" style="border-radius:50%;" alt="">
+                                </div>
+                                <div class="avtar-name">
+                                    <h3>Abhishek Jaiswal</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="have_dots">
+                            <span><i class="far fa-envelope"></i></span>
+                        </li>
+                        <li class="have_dots">
+                            <span><i class="far fa-bell"></i></span>
+                        </li>
+                        <li>
+                            <span class="bar"><i class="fas fa-bars"></i></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- --------------Main-Content------------ -->
+        <div class="main-content">
+            <div class="info-card">
+                <div class="card">
+                    <div class="card-icon">
+                        <span><i class="fas fa-folder-open"></i></span>
+                    </div>
+                    <!-- <i class="fas fa-money-check-alt"></i> -->
+                    <div class="card-details">
+                        <h4>New Product</h4>
+                        <h2>1</h2>
+                    </div>
+                    <p>Latest</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <span><i class="fas fa-layer-group"></i></span>
+                    </div>
+                    <!-- <i class="fas fa-money-check-alt"></i> -->
+                    <div class="card-details">
+                        <h4>Product</h4>
+                        <h2>12</h2>
+                    </div>
+                    <p>All Products</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <span><i class="fas fa-burn"></i></span>
+                    </div>
+                    <div class="card-details">
+                        <h4>Total Bidder</h4>
+                        <h2>9</h2>
+                    </div>
+                    <p>Increased by 60%</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <span><i class="fab fa-sellsy"></i></span>
+                    </div>
+                    <div class="card-details">
+                        <h4>Total Seller</h4>
+                        <h2>6</h2>
+                    </div>
+                    <p>Increased by 50%</p>
+                </div>
+            </div>
+            <!-- <div class="main-table">
+                <div class="title">
+                  
+                </div>
+                <div class="user_table">
+
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- -------------jqueryfiles-------------------------- -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $('.btn').click(function () {
+            $(this).toggleClass("click");
+            $('.sidebar').toggleClass("show");
+        });
+        $('.feat-btn').click(function () {
+            $('nav ul .feat-show').toggleClass("show");
+            $('nav ul .first').toggleClass("rotate");
+        });
+        $('.serv-btn').click(function () {
+            $('nav ul .serv-show').toggleClass("show1");
+            $('nav ul .second').toggleClass("rotate");
+        });
+        $('nav ul li').click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".bar").click(function () {
+                $(".side-bar").toggleClass("hide")
+                $("header, .main-content").toggleClass("slide-left")
+            })
+        })
+    </script>
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

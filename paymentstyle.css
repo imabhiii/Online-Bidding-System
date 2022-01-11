@@ -1,0 +1,166 @@
+/* -----------payment----------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0e9fe7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    background-color: #fff;
+    width: 570px;
+    padding: 60px;
+    margin: 15px auto 0;
+    box-shadow: 0px 0px 20px rgba(14, 108, 145, 0.5);
+    height: 800px;
+}
+.wrapper h2{
+    background-color: #fcfcfc;
+    color: #7ed321;
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px dotted rgb(10, 61, 109);
+}
+h4{
+    /* padding-bottom: 2px; */
+    color: #7ed321;
+}
+.input-group{
+    margin-bottom: 8px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+}
+.input-box{
+    width: 100%;
+    margin-right: 12px;
+    position: relative;
+}
+.input-box:last-child{
+    margin-right: 0;
+}
+.name{
+    padding: 14px 10px 14px 50px;
+    width: auto;
+    background-color: #fcfcfc;
+    border: 1px solid #00000033;
+    outline: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    border-radius: 3px;
+    color: #333;
+}
+.name:focus, .dob:focus{
+    -webkit-box-shadow:0 0 2px 1px #7ed32180;
+    -moz-box-shadow:0 0 2px 1px #7ed32180;
+    box-shadow: 0 0 2px 1px #7ed32180;
+    border: 1px solid #7ed321;
+}
+.input-box .icon{
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    color: #333;
+    background-color: #f1f1f1;
+    border-radius: 2px 0 0 2px;
+    transition: 0.3s;
+    font-size: 20px;
+    pointer-events: none;
+    border: 1px solid #00000033;
+    border-right: none;
+}
+ .DOB{
+    display: inline-block;
+    width: 70%;
+    background-color: #fcfcfc;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #c0bfbf;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.name:focus * .icon{
+    background-color: #7ed321;
+    color: #fff;
+    border-right: 1px solid #7ed321;
+    border: none;
+    transition: 1s;
+}
+.dob{
+    display: inline-block;
+    width: 65%;
+    background-color: #fcfcfc;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #c0bfbf;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.input-box label{
+    width: 50%;
+    padding: 8px;
+    background-color: #fcfcfc;
+    display: inline-block;
+    text-align: center;
+    float: left;
+    border: 1px solid #c0bfbf;
+}
+.input-box label:first-of-type{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: none;
+}
+.input-box label:last-of-type{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+button{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    background: #7ed321;
+    color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: all 0.35s ease;
+}
+button:hover{
+    cursor: pointer;
+    background: #850874;
+}
+#imggreen{
+    display: inline-block;
+    margin: -22px;
+    margin-right: 210px;
+    padding-right: 39px;
+    float: right;
+}
+#imgblue{
+    display: inline-block;
+    left: 540px;
+    margin-left: -5px;
+    padding-right: 20px;
+    margin-top: -50px;
+}
+#imgred{
+    display:block;
+    float: right;
+    left: 22px;
+    margin: -72px;
+    margin-right: 285px;
+    padding-right: 29px;
+}

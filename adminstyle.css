@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #707070;
+    font-size: 16px;
+}
+ul,li{
+    list-style-type: none;
+}
+.side-bar{
+    width: 250px;
+    height: 190vh;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgb(230,230,230);
+    overflow: hidden;
+    overflow-x: auto;
+    position:fixed;
+    padding: 15px;
+    transition: .5s;
+}
+.side-bar .logo{
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.side-bar .logo a img{
+    width: 60px;
+}
+.side-bar .logo a h1{
+    font-size: 27px;
+    color: #B576F6;
+    text-decoration: none;
+    font-family: 'Righteous';
+}
+.side-bar .logo a:last-child{
+    display: none;
+}
+.side-bar .avtar{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+.side-bar .avtar .avtar-img{
+    margin-right: 10px;
+}
+.side-bar .avtar .name-pos h2{
+    margin-right: -40px;
+    text-align: center;
+}
+.side-bar .avtar .name-pos h5{
+    color: #ccc;
+}
+.side-bar .side-bar-nav ul li a{
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    margin: 10px 0;
+        text-decoration: none;
+    width: 100%;
+    justify-content:initial;
+    text-align: center;
+    transition: .4s;
+}
+.side-bar .side-bar-nav ul li a .nav-link{
+    margin-left: 15px;
+}
+.side-bar .side-bar-nav ul li a:hover{
+    background-color: #B576F6;
+    color: #fff;
+}
+header{
+    margin-left: 250px;
+    padding: 15px;
+    box-shadow: 0 0 8px rgb(230,230,230);
+    min-height: 80px;
+}
+header .head_inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .head_inner .right-part form{
+    width: 300px;
+    height: 45px;
+    position: relative;
+}
+header .head_inner .right-part form input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: 0 0 8px #ccc;
+    padding: 10px 15px;
+}
+header .head_inner .right-part form input:focus{
+    box-shadow: 0 0 8px #ccc;
+}
+header .head_inner .right-part form button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15%;
+    height: 100%;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: #B576F6;
+    cursor: pointer;
+}
+header .head_inner .left-part ul{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+header .head_inner .left-part ul li{
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+header .head_inner .left-part ul li .profile{
+    display: flex;
+    margin-right: 25px;
+    align-items: center;
+}
+header .head_inner .left-part ul li .profile .avtar-img{
+    margin-right: 15px;
+}
+header .head_inner .left-part ul li span{
+    cursor: pointer;
+}
+header .head_inner .left-part ul li span i{
+    font-size: 22px;
+}
+header .head_inner .left-part ul li span:hover{
+    color: #B576F6;
+}
+header .head_inner .left-part ul li.have_dots span{
+    position: relative;
+} 
+header .head_inner .left-part ul li.have_dots span::before{
+    content: "";
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 8px;
+    height: 8px;
+    background-color: #B576F6;
+    border-radius: 50px;
+}
+.main-content{
+    margin: 15px;
+    margin-left: 275px;
+    padding: 15px;
+    box-shadow: 0 0 0px rgb(230,230,230);
+}
+.main-content .info-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.main-content .info-card .card{
+    width:290px;
+    min-height: 100px;
+    padding: 20px;
+    background: linear-gradient(to left,#B576F6,#4e128f);
+    border-radius: 15px;
+    color: #fff;
+    position: relative;
+    /* text-align: center; */
+}
+.main-content .info-card .card:nth-child(1){
+    background: linear-gradient(to left,#e3c76a,#477499);
+}
+.main-content .info-card .card:nth-child(2){
+    background: linear-gradient(to left,#B576F6,#4e128f);
+}
+.main-content .info-card .card:nth-child(4){
+    background: linear-gradient(to left,#6AA5E3,#6866E5);
+}
+.main-content .info-card .card:nth-child(3){
+    background: linear-gradient(to left,#6AA5E3,#10882a);
+}
+.main-content .info-card .card::before,
+.main-content .info-card .card::after{
+    content: "";
+    position: absolute;
+    top: -5%;
+    right:-15%;
+    width: 110px;
+    height: 110px;
+    background-color:rgba(255,255,255,0.5);
+    border-radius: 100%;
+}
+.main-content .info-card .card::after{
+    top: auto;
+    bottom: -5%;  
+    right: -5%; 
+}
+.main-content .info-card .card .card-icon{
+    margin-bottom: 15px;
+    width: 50px;
+    height: 45px;
+    /* background-color: rgba(255,255,255,0.5); */
+    background-color: rgb(223, 98, 167);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 8px rgb(212, 173, 173);
+}
+.main-content .info-card .card .card-icon span{
+    font-size: 26px;
+}
+.main-content .info-card .card .card-details{
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+.main-content .main-table .title{
+    margin: 15px 0;
+}
+.main-content .user_table{
+    display: grid;
+}
+.main-content .user_table table thead tr td{
+    padding: 15px 0;
+    font-weight: bold;
+    color: #000;
+}
+.main-content .user_table table tbody tr td{
+    padding: 15px 0;
+}
+.main-content .user_table tbody tr .btn{
+    padding: 7px 25px;
+    background: linear-gradient(to left, #B576F6, #9a4fe9);
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+.side-bar.hide{
+    width: 100px;
+    overflow: hidden;
+}
+.side-bar.hide .logo a:last-child{
+    display: block;
+}
+.side-bar.hide .logo a:first-child,
+.side-bar.hide .name-pos,
+.side-bar.hide .side-bar-nav .nav-link{
+    display: none;
+}
+.side-bar.hide .side-bar-nav span:not(.nav-link){
+    font-size: 20px;
+    padding-left: 8px;
+}
+.slide-left{
+    margin-left: 100px;
+}
+header, .main-content{
+    transition: .2s;
+}
+.page-wrape{
+    width: 100%;
+    overflow-x: hidden !important;
+}
+/* ------------------------mediaquery----------------- */
+@media screen and (max-width:992px) {
+    .side-bar{
+        left: -250px;
+    }
+    .side-bar.hide{
+        width: 250px;
+        left: 0;
+    }
+    header, .main-content{
+        margin: 0;
+    }
+    .side-left{
+        margin-left: 0;
+    }
+    .side-bar.hide .logo a:first-child,
+    .side-bar.hide .name-pos,
+    .side-bar.hide .side-bar-nav .nav-link{
+        display: block;
+    }
+    .side-bar.hide .logo a:first-child{
+        display: none;
+    }
+}
+@media screen and (max-width:767px) {
+        .main-content .info-card .card{
+            width: 40%;
+            margin-bottom: 15px;
+        }
+        header .head_inner .right-part form{
+            width: 200px;
+            height: 40px;
+        }
+        .main-content .user_table{
+            overflow-x: auto;
+        }
+        .main-content .user_table table{
+            width: 700px;
+        }
+}
+ .dropdown-btn {
+  padding: 6px 8px 6px 10px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #440583;
+     background: linear-gradient(to left, #B576F6, #9a4fe9);
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+ .dropdown-btn:hover{
+     background-color: #B576F6;
+     color: #fff;
+ }
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: linear-gradient(to left, #B576F6, #9a4fe9);
+  color: #440583;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color:  linear-gradient(to left, #B576F6, #9a4fe9);
+  padding-left: 16px;
+}
+
+/* Optional: Style the caret down icon */
+/* .fa-caret-down {
+  padding-left: 30px;
+} */
+@media screen and (max-width:576px) {
+    header .head_inner{
+        flex-direction: column-reverse;
+    }
+    header .head_inner .right-part form{
+        width: 100%;
+        height: 40px;
+    }
+    header .head_inner .left-part,
+    header .head_inner .right-part{
+        width: 100%;
+    }
+    header .head_inner .left-part ul{
+        justify-content: space-between;
+    }
+    header .head_inner .left-part ul li:first-child {
+        margin-left: 0;
+    }
+    .main-content .info-card .card{
+        width: 100%;
+    }
+}

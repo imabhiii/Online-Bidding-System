@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounts- Online_Bidding</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="header1">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <h2 style="color: whitesmoke;">Online <strong style="color:rgb(163, 4, 4);">Bidding</strong>
+                        </h2>
+                        <!-- <img src="images/auction22.png" height="auto" width="40px" alt=""> -->
+                    </a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                    <a href="products.html">Products</a>
+                                </button>
+                                <div class="dropdown-content">
+
+                                    <a href="products.html">Toys</a>
+                                    <a href="products.html">Motors</a>
+                                    <a href="products.html">Health</a>
+                                    <a href="products.html">Sports</a>
+                                    <a href="products.html">Fashions</a>
+                                    <a href="products.html">Stationary</a>
+                                    <a href="products.html">Electronics</a>
+                                    <a href="products.html">Home & Garden</a>
+                                    <a href="products.html">All Products</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact_Us.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right-nav">
+                <div class="center">
+                    <div class="search-box">
+                        <input type="text" placeholder="&#x270e; search for products" name="search">
+                    </div>
+                </div>
+                <div class="account-img">
+                    <a href="account.html"><img src="https://img.icons8.com/ios-filled/50/000000/user-group-man-man.png"
+                            width="30px" height="30px">
+                        <!-- <div class="dropdown-content">
+                                            <ul>
+                                                <li><a href="admindashboard.html">Admin login</a></li>
+                                                <li><a href="seller.html">Seller</a></li>
+                                                <li><a href="bidder.html">Bidder</a></li>
+                                            </ul>
+                                        </div> -->
+                    </a>
+                </div>
+                <!-- <li><a href="admin.html">Admin</a></li> -->
+                <div class="account-img">
+                    <a href="savedProduct.html"><img src="https://freepngimg.com/thumb/cart/2-2-cart-png-file.png"
+                            width="30px" height="30px">
+
+                    </a>
+                </div>
+                <div class="cart-img">
+                    <a href="cart.html">
+                        <img src="images/cart.png" width="28px" height="28px" alt="cart">
+                    </a>
+                </div>
+                <div class="iconimg">
+                    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------account-page--------------------------------- -->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()" style=" color: #fff;">Login</span>
+                            <span onclick="register()" style=" color: #fff;">Register</span>
+                            <hr id="indicator">
+                        </div>
+                        <form id="loginform">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn"
+                                style="background-color: red; color: whitesmoke; height: 35px;">Login</button>
+                            <a href="" style="color: whitesmoke; line-height: 45px;">Forgot Password</a>
+                        </form>
+                        <form id="regform">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <input type="email" placeholder="E-mail">
+                            <input type="text" placeholder="name">
+                            <input type="number" placeholder="contact number">
+                            <input type="text" placeholder="address">
+                            <input type="date" id="birthday" name="birthday">
+                            <label style="color: whitesmoke;">Register as</label>
+                            <select class="radioras" style="width: 62%; height:30px;">
+                                <option type="radio">Seller</option>
+                                <option type="radio">Bidder</option>
+                            </select>
+                            <button type="submit" class="btn"
+                                style="background-color: red; color: whitesmoke; height: 35px;">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------Meet our team------------------- -->
+    <div class="testimonial">
+        <h1>Meet Our Team</h1>
+        <div class="review-box">
+            <div id="slidess">
+                <div class="cardss">
+                    <div class="profile">
+                        <img src="images/137596349_1298209983883972_1584737591637659789_n.jpg" height="80px"
+                            width="80px" alt="">
+                        <div>
+                            <h3>Abhishek Jaiswal</h3>
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum blanditiis, deleniti culpa labore
+                        quis quia tempore distinctio inventore ducimus nulla delectus asperiores, velit facere sed
+                        voluptates, amet provident nihil architecto!</p>
+                </div>
+                <div class="cardss">
+                    <div class="profile">
+                        <img src="images/180752645_309637140553961_7075182170773664635_n.jpg" height="80px" width="80px"
+                            alt="">
+                        <div>
+                            <h3>Prajita Khatri</h3>
+                            <p>Web developer</p>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum blanditiis, deleniti culpa labore
+                        quis quia tempore distinctio inventore ducimus nulla delectus asperiores, velit facere sed
+                        voluptates, amet provident nihil architecto!</p>
+                </div>
+                <div class="cardss">
+                    <div class="profile">
+                        <img src="images/181890669_565310524447228_5454238613205578354_n.jpg" height="80px" width="80px"
+                            alt="">
+                        <div>
+                            <h3>Prabhat Kiran Sigdel</h3>
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum blanditiis, deleniti culpa labore
+                        quis quia tempore distinctio inventore ducimus nulla delectus asperiores, velit facere sed
+                        voluptates, amet provident nihil architecto!</p>
+                </div>
+            </div>
+            <div class="sidebar">
+                <img src="images/up-arrow.png" id="upArrow" onclick="show_hide()" alt="">
+                <img src="images/down-arrow.png" id="downArrow" onclick="show_hide()" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- <div class="testimonial">
+        <div class="small-container">
+            <h2 class="title">Meet Our Team</h2>
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/137596349_1298209983883972_1584737591637659789_n.jpg" alt="">
+                    <h3>Abhishek Jaiswal</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Itaque aut cumque repellendus, incidunt</p>
+                    <img src="images/180752645_309637140553961_7075182170773664635_n.jpg" alt="">
+                    <h3>Prajita Khatri</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Itaque aut cumque repellendus, incidunt</p>
+                    <img src="images/181890669_565310524447228_5454238613205578354_n.jpg" alt="">
+                    <h3>Prabhat Kiran Sigdel</h3>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- ---------------------------------------------------services------------------- -->
+    <div class="services">
+        <div class="small-container">
+            <div class="servicesOut">
+                <div class="row">
+                    <div class="serviceWidget">
+                        <i><img src="https://cdn.sastodeal.com/Bitmap1.png" height="55px" width="auto" alt=""></i>
+                        <h4>Secured Payment</h4>
+                    </div>
+                    <!-- <div class="col-3"> -->
+                    <div class="serviceWidget">
+                        <i><img src="https://cdn.sastodeal.com/Bitmap2.png" height="55px" width="auto" alt=""></i>
+                        <h4>Verified Sellers</h4>
+                    </div>
+                    <!-- </div> -->
+                    <!-- <div class="col-3"> -->
+                    <div class="serviceWidget">
+                        <i><img src="https://cdn.sastodeal.com/Bitmap3.png" height="55px" width="auto" alt=""></i>
+                        <h4>OnTime Delivery</h4>
+                    </div>
+                    <!-- </div> -->
+                    <!-- <div class="col-3"> -->
+                    <div class="serviceWidget">
+                        <i><img src="https://cdn.sastodeal.com/Bitmap4.png" height="55px" width="auto" alt=""></i>
+                        <h4>Customer Service</h4>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------footers------------------ -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-col-2">
+                    <h3><a href="index.html" style="text-decoration: none;">
+                            <h2>Online <strong style="color:red;">Bidding</strong></h2>
+                        </a></h3>
+                    <ul>
+                        <li><a href="https://www.google.com/maps/"><i class="fas fa-location-arrow"></i>
+                                Baneswor,Kathmandu</a></li>
+                        <li><a href="https://mail.google.com/mail"><i class="fas fa-envelope"></i>
+                                info@biddingNepal.com</a></li>
+                        <li><a href="#"><i class="fas fa-phone-volume"></i> +123456789</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li> <a href="#">Coupons</a></li>
+                        <li><a href="#">Blog Post</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Join Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com"><i class="fab fa-facebook" style="color: #3b5998;">
+                                    facebook</i></a></li>
+                        <li><a href="https://twitter.com"><i class="fab fa-twitter" style="color: #0097e6;">
+                                    Twitter</i></a>
+                        </li>
+                        <li><a href=" https://www.instagram.com"><i class="fab fa-instagram" style="color:#e84393;">
+                                    Instagram</i></a></li>
+                        <li><a href="https://www.youtube.com"><i class="fab fa-youtube" style="color: #c4302b;">
+                                    Youtube</i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="last"> -->
+        <p class="copyright"><a href="https://mail.google.com" style="text-decoration: none;"><strong
+                    style="color:gold;">©
+                    2021| <i class="fas fa-envelope"></i>
+                    info@biddingNepal.com |All right reserved</strong></a>
+        </p>
+    </div>
+
+    <!-- --------------testimonials----------- -->
+    <script>
+        var slidess = document.getElementById("slidess");
+        var upArrow = document.getElementById("upArrow");
+        var downArrow = document.getElementById("downArrow");
+        let x = 0;
+        upArrow.onclick = function () {
+            if (x > "-600") {
+                x = x - 300;
+                slidess.style.top = x + "px";
+            }
+        }
+        downArrow.onclick = function () {
+            if (x < 0) {
+                x = x + 300;
+                slidess.style.top = x + "px";
+            }
+        }
+    </script>
+    <!-- -------------------js for toggle menu------------------------------- -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <!-- -------------------js for toggle form---------------- -->
+    <script>
+        var loginform = document.getElementById("loginform");
+        var regform = document.getElementById("regform");
+        var indicator = document.getElementById("indicator");
+        function register() {
+            regform.style.transform = "translateX(0px)";
+            loginform.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(100px)";
+        }
+        function login() {
+            regform.style.transform = "translateX(300px)";
+            loginform.style.transform = "translateX(300px)";
+            indicator.style.transform = "translateX(0px)";
+        }
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+
+    <script src="https://kit.fontawesome.com/cb18d5e6f6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
